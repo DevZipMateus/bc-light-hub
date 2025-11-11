@@ -29,7 +29,7 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center justify-center mb-6">
+          <div className="inline-flex items-center justify-center mb-6 bg-[#37637C] p-8 rounded-lg shadow-xl">
             <img src={logoBranca} alt="B & C Iluminação" className="h-64 md:h-80 w-auto drop-shadow-lg" />
           </div>
           
