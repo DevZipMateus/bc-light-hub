@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Lightbulb, Sparkles } from "lucide-react";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -16,9 +17,14 @@ const Hero = () => {
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-background via-muted/30 to-background overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(245,166,35,0.08),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(44,95,124,0.08),transparent_50%)]" />
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-background/70 to-background/80" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(245,166,35,0.15),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(44,95,124,0.15),transparent_50%)]" />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
