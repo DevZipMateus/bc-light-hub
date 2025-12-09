@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Sparkles } from "lucide-react";
+import { Sparkles, Store } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroBackground from "@/assets/hero-background.jpg";
 import logoBranca from "@/assets/logo-branca.png";
 
@@ -41,7 +42,7 @@ const Hero = () => {
             Soluções completas e personalizadas em iluminação com fabricação própria de perfis LED e instalação especializada em telas tensionadas iluminadas
           </h2>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <Button 
               size="lg"
               onClick={scrollToContact}
@@ -59,6 +60,17 @@ const Hero = () => {
               Fale pelo WhatsApp
             </Button>
           </div>
+
+          <Link to="/vitrine">
+            <Button 
+              size="lg"
+              variant="outline"
+              className="border-2 border-accent/60 text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-300 text-lg px-8 mb-12"
+            >
+              <Store className="mr-2 h-5 w-5" />
+              Confira nossa vitrine
+            </Button>
+          </Link>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
             <div className="bg-card/50 backdrop-blur-sm p-6 rounded-lg border border-border shadow-soft hover:shadow-medium transition-all duration-300">
