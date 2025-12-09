@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Store } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -48,6 +49,10 @@ const Header = () => {
             <button onClick={() => scrollToSection("contato")} className="text-foreground hover:text-primary transition-colors font-medium">
               Contato
             </button>
+            <Link to="/vitrine" className="text-foreground hover:text-primary transition-colors font-medium flex items-center gap-1">
+              <Store size={18} />
+              Vitrine
+            </Link>
             <Button onClick={() => window.open("https://wa.me/5541999999999", "_blank")} className="bg-primary hover:bg-primary/90 text-primary-foreground">
               Fale conosco
             </Button>
@@ -72,6 +77,10 @@ const Header = () => {
               <button onClick={() => scrollToSection("contato")} className="text-foreground hover:text-primary transition-colors font-medium text-left">
                 Contato
               </button>
+              <Link to="/vitrine" className="text-foreground hover:text-primary transition-colors font-medium text-left flex items-center gap-1">
+                <Store size={18} />
+                Vitrine
+              </Link>
               <Button onClick={() => window.open("https://wa.me/5541999999999", "_blank")} className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
                 Fale conosco
               </Button>
