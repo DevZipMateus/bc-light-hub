@@ -1,4 +1,4 @@
-import { Mail, MapPin, Clock, Instagram, Facebook, Phone } from "lucide-react";
+import { Mail, MapPin, Clock, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -99,22 +99,39 @@ const Contact = () => {
 
               <div className="bg-card p-8 rounded-lg shadow-soft border border-border">
                 <h3 className="text-xl font-bold mb-6 text-center text-foreground">Siga-nos nas redes sociais</h3>
-                <div className="flex justify-center space-x-4">
+                <div className="flex justify-center space-x-6">
                   <a
                     href="https://www.instagram.com/bassanicalegariiluminacao/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-4 bg-primary/10 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 group"
+                    className="hover:scale-110 transition-transform"
                   >
-                    <Instagram className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
+                    <svg className="h-14 w-14" viewBox="0 0 48 48" fill="none">
+                      <defs>
+                        <linearGradient id="instagram-bg-contact" x1="0%" y1="100%" x2="100%" y2="0%">
+                          <stop offset="0%" stopColor="#FED576" />
+                          <stop offset="10%" stopColor="#F47133" />
+                          <stop offset="40%" stopColor="#BC3081" />
+                          <stop offset="70%" stopColor="#4C63D2" />
+                          <stop offset="100%" stopColor="#4C63D2" />
+                        </linearGradient>
+                      </defs>
+                      <rect width="48" height="48" rx="11" fill="url(#instagram-bg-contact)"/>
+                      <rect x="8" y="8" width="32" height="32" rx="8" stroke="white" strokeWidth="3" fill="none"/>
+                      <circle cx="24" cy="24" r="8" stroke="white" strokeWidth="3" fill="none"/>
+                      <circle cx="35" cy="13" r="2.5" fill="white"/>
+                    </svg>
                   </a>
                   <a
                     href="https://www.facebook.com/ilumicentercuritiba?locale=pt_BR"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-4 bg-primary/10 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 group"
+                    className="hover:scale-110 transition-transform"
                   >
-                    <Facebook className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
+                    <svg className="h-14 w-14" viewBox="0 0 48 48" fill="none">
+                      <circle cx="24" cy="24" r="22" fill="#1877F2"/>
+                      <path d="M32.5 25.5H27.5V42H21V25.5H17V20H21V16.5C21 12.5 23.5 9 28.5 9C30.5 9 32 9.5 32 9.5V14.5H29.5C27.5 14.5 27 15.5 27 17V20H32L32.5 25.5Z" fill="white"/>
+                    </svg>
                   </a>
                 </div>
                 <div className="mt-6 text-center">
