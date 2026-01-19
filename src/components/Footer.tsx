@@ -44,23 +44,18 @@ const Footer = () => {
               >
                 <svg className="h-12 w-12" viewBox="0 0 48 48" fill="none">
                   <defs>
-                    <radialGradient id="instagram-radial" cx="30%" cy="107%" r="150%">
-                      <stop offset="0%" stopColor="#FFDD55" />
-                      <stop offset="10%" stopColor="#FFDD55" />
-                      <stop offset="50%" stopColor="#FF543E" />
-                      <stop offset="100%" stopColor="#C837AB" />
-                    </radialGradient>
-                    <radialGradient id="instagram-radial-2" cx="107.5%" cy="0%" r="150%">
-                      <stop offset="0%" stopColor="#406ADC" />
-                      <stop offset="50%" stopColor="#6A45BE" />
-                      <stop offset="100%" stopColor="#6A45BE" stopOpacity="0" />
-                    </radialGradient>
+                    <linearGradient id="instagram-bg" x1="0%" y1="100%" x2="100%" y2="0%">
+                      <stop offset="0%" stopColor="#FED576" />
+                      <stop offset="10%" stopColor="#F47133" />
+                      <stop offset="40%" stopColor="#BC3081" />
+                      <stop offset="70%" stopColor="#4C63D2" />
+                      <stop offset="100%" stopColor="#4C63D2" />
+                    </linearGradient>
                   </defs>
-                  <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#instagram-radial)"/>
-                  <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#instagram-radial-2)"/>
-                  <circle cx="24" cy="24" r="9" stroke="white" strokeWidth="3" fill="none"/>
-                  <circle cx="36" cy="12" r="2.5" fill="white"/>
-                  <rect x="6" y="6" width="36" height="36" rx="9" stroke="white" strokeWidth="3" fill="none"/>
+                  <rect width="48" height="48" rx="11" fill="url(#instagram-bg)"/>
+                  <rect x="8" y="8" width="32" height="32" rx="8" stroke="white" strokeWidth="3" fill="none"/>
+                  <circle cx="24" cy="24" r="8" stroke="white" strokeWidth="3" fill="none"/>
+                  <circle cx="35" cy="13" r="2.5" fill="white"/>
                 </svg>
               </a>
               <a 
