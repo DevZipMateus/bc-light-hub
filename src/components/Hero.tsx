@@ -38,19 +38,11 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <Button 
               size="lg"
-              onClick={scrollToContact}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-medium hover:shadow-lg transition-all duration-300 text-lg px-8"
-            >
-              <Sparkles className="mr-2 h-5 w-5" />
-              Solicite um orçamento
-            </Button>
-            <Button 
-              size="lg"
               variant="outline"
               onClick={() => window.open("https://wa.me/5541984125653", "_blank")}
               className="border-2 border-primary/60 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-lg px-8"
             >
-              Fale pelo WhatsApp
+              Fale pelo WhatsApp: (41) 98412-5653
             </Button>
           </div>
 
