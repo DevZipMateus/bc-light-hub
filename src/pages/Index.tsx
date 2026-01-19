@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MissionVisionValues from "@/components/MissionVisionValues";
+import OurHistory from "@/components/OurHistory";
 import Services from "@/components/Services";
 import MiniContact from "@/components/MiniContact";
 import Manufacturers from "@/components/Manufacturers";
@@ -19,6 +20,7 @@ const Index = () => {
         <MiniContact />
         <Manufacturers />
         <MissionVisionValues />
+        <OurHistory />
         <Contact />
       </main>
       <Footer />
