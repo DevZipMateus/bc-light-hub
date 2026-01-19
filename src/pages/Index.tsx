@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MissionVisionValues from "@/components/MissionVisionValues";
 import Services from "@/components/Services";
+import MiniContact from "@/components/MiniContact";
 import VitrineSection from "@/components/VitrineSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -15,7 +16,7 @@ const Index = () => {
         <Hero />
         <MissionVisionValues />
         <Services />
-        <VitrineSection />
+        <MiniContact />
         <Contact />
       </main>
       <Footer />
