@@ -41,9 +41,6 @@ const Header = () => {
             <button onClick={() => scrollToSection("servicos")} className="text-foreground hover:text-primary transition-colors font-medium">
               Serviços
             </button>
-            <button onClick={() => scrollToSection("contato")} className="text-foreground hover:text-primary transition-colors font-medium">
-              Contato
-            </button>
             <button onClick={() => scrollToSection("fabricantes")} className="text-foreground hover:text-primary transition-colors font-medium">
               Fabricantes
             </button>
@@ -53,8 +50,8 @@ const Header = () => {
             <button onClick={() => scrollToSection("historia")} className="text-foreground hover:text-primary transition-colors font-medium">
               História
             </button>
-            <button onClick={() => scrollToSection("endereco")} className="text-foreground hover:text-primary transition-colors font-medium">
-              Endereço
+            <button onClick={() => scrollToSection("contato")} className="text-foreground hover:text-primary transition-colors font-medium">
+              Contato
             </button>
           </nav>
 
@@ -72,9 +69,6 @@ const Header = () => {
               <button onClick={() => scrollToSection("servicos")} className="text-foreground hover:text-primary transition-colors font-medium text-left">
                 Serviços
               </button>
-              <button onClick={() => scrollToSection("contato")} className="text-foreground hover:text-primary transition-colors font-medium text-left">
-                Contato
-              </button>
               <button onClick={() => scrollToSection("fabricantes")} className="text-foreground hover:text-primary transition-colors font-medium text-left">
                 Fabricantes
               </button>
@@ -84,8 +78,8 @@ const Header = () => {
               <button onClick={() => scrollToSection("historia")} className="text-foreground hover:text-primary transition-colors font-medium text-left">
                 História
               </button>
-              <button onClick={() => scrollToSection("endereco")} className="text-foreground hover:text-primary transition-colors font-medium text-left">
-                Endereço
+              <button onClick={() => scrollToSection("contato")} className="text-foreground hover:text-primary transition-colors font-medium text-left">
+                Contato
               </button>
             </div>
           </nav>}
