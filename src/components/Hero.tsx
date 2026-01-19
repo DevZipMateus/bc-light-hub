@@ -47,7 +47,7 @@ const Hero = () => {
             <Button 
               size="lg"
               variant="outline"
-              onClick={() => window.open("https://wa.me/5541999999999", "_blank")}
+              onClick={() => window.open("https://wa.me/5541984125653", "_blank")}
               className="border-2 border-primary/60 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-lg px-8"
             >
               Fale pelo WhatsApp

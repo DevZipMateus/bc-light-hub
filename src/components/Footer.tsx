@@ -10,13 +10,13 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">Contato</h3>
             <div className="flex items-center gap-3">
               <Mail className="h-5 w-5 text-primary" />
-              <a href="mailto:simone@ilumicenter.com.br" className="hover:text-primary transition-colors">
-                simone@ilumicenter.com.br
+              <a href="mailto:silvio@bassanicalegariiluminacao.com.br" className="hover:text-primary transition-colors">
+                silvio@bassanicalegariiluminacao.com.br
               </a>
             </div>
             <div className="flex items-start gap-3">
               <MapPin className="h-5 w-5 text-primary mt-0.5" />
-              <span>Rua Capiberibe, 153 loja 02</span>
+              <span>Rua Capiberibe, 153 loja 02 - Bairro Santa Quitéria</span>
             </div>
           </div>
 
