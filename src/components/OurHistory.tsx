@@ -104,6 +104,104 @@ const OurHistory = () => {
                 Assim, a história da iluminação é uma jornada de inovação, beleza e progresso, transformando a escuridão em inspiração - e moldando o mundo ao nosso redor de maneiras inimagináveis.
               </p>
             </div>
+
+            {/* Timeline */}
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold text-primary text-center mb-10">Nossa linha do tempo</h3>
+              
+              {/* Desktop Timeline */}
+              <div className="hidden md:block relative">
+                {/* Horizontal line */}
+                <div className="absolute top-6 left-0 right-0 h-0.5 bg-foreground"></div>
+                
+                <div className="flex justify-between items-start">
+                  {/* 2016 */}
+                  <div className="flex flex-col items-center relative">
+                    <div className="w-0.5 h-8 bg-foreground transform -rotate-12"></div>
+                    <div className="mt-3 text-center">
+                      <p className="font-bold text-foreground">2016</p>
+                      <p className="text-sm text-muted-foreground">Abertura</p>
+                    </div>
+                  </div>
+
+                  {/* 2017 */}
+                  <div className="flex flex-col items-center relative">
+                    <div className="w-0.5 h-8 bg-foreground transform -rotate-12"></div>
+                    <div className="mt-3 text-center max-w-[120px]">
+                      <p className="font-bold text-foreground">2017</p>
+                      <p className="text-sm text-muted-foreground">Sociedade Silvio e Simone</p>
+                      <p className="text-sm text-muted-foreground">Ajuste CNPJ</p>
+                    </div>
+                  </div>
+
+                  {/* 2020 */}
+                  <div className="flex flex-col items-center relative">
+                    <div className="w-0.5 h-8 bg-foreground transform -rotate-12"></div>
+                    <div className="mt-3 text-center">
+                      <p className="font-bold text-foreground">2020</p>
+                      <p className="text-sm text-muted-foreground">Novo endereço</p>
+                    </div>
+                  </div>
+
+                  {/* 2024 */}
+                  <div className="flex flex-col items-center relative">
+                    <div className="w-0.5 h-8 bg-foreground transform -rotate-12"></div>
+                    <div className="mt-3 text-center max-w-[120px]">
+                      <p className="font-bold text-foreground">2024</p>
+                      <p className="text-sm text-muted-foreground">Realinhamento de marca</p>
+                    </div>
+                  </div>
+
+                  {/* 2026 */}
+                  <div className="flex flex-col items-center relative">
+                    <div className="w-0.5 h-8 bg-foreground transform -rotate-12"></div>
+                    <div className="mt-3 text-center">
+                      <p className="font-bold text-foreground">2026</p>
+                      <p className="text-sm text-muted-foreground">Ampliação</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mobile Timeline */}
+              <div className="md:hidden relative pl-8">
+                {/* Vertical line */}
+                <div className="absolute left-3 top-0 bottom-0 w-0.5 bg-foreground"></div>
+                
+                <div className="space-y-8">
+                  {/* 2016 */}
+                  <div className="relative">
+                    <div className="absolute -left-5 top-1 w-4 h-0.5 bg-foreground"></div>
+                    <p className="font-bold text-foreground">2016 - Abertura</p>
+                  </div>
+
+                  {/* 2017 */}
+                  <div className="relative">
+                    <div className="absolute -left-5 top-1 w-4 h-0.5 bg-foreground"></div>
+                    <p className="font-bold text-foreground">2017</p>
+                    <p className="text-sm text-muted-foreground">Sociedade Silvio e Simone / Ajuste CNPJ</p>
+                  </div>
+
+                  {/* 2020 */}
+                  <div className="relative">
+                    <div className="absolute -left-5 top-1 w-4 h-0.5 bg-foreground"></div>
+                    <p className="font-bold text-foreground">2020 - Novo endereço</p>
+                  </div>
+
+                  {/* 2024 */}
+                  <div className="relative">
+                    <div className="absolute -left-5 top-1 w-4 h-0.5 bg-foreground"></div>
+                    <p className="font-bold text-foreground">2024 - Realinhamento de marca</p>
+                  </div>
+
+                  {/* 2026 */}
+                  <div className="relative">
+                    <div className="absolute -left-5 top-1 w-4 h-0.5 bg-foreground"></div>
+                    <p className="font-bold text-foreground">2026 - Ampliação</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
