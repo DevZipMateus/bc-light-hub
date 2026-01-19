@@ -1,4 +1,4 @@
-import { Mail, MapPin, Clock, Instagram, Facebook } from "lucide-react";
+import { Mail, MapPin, Clock } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -40,17 +40,32 @@ const Footer = () => {
                 href="https://www.instagram.com/bassanicalegariiluminacao/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-white/10 p-3 rounded-full hover:bg-primary transition-colors"
+                className="bg-white p-3 rounded-full hover:scale-110 transition-transform"
               >
-                <Instagram className="h-6 w-6" />
+                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none">
+                  <defs>
+                    <linearGradient id="instagram-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                      <stop offset="0%" stopColor="#FFDC80" />
+                      <stop offset="25%" stopColor="#F77737" />
+                      <stop offset="50%" stopColor="#E1306C" />
+                      <stop offset="75%" stopColor="#C13584" />
+                      <stop offset="100%" stopColor="#833AB4" />
+                    </linearGradient>
+                  </defs>
+                  <rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#instagram-gradient)" strokeWidth="2" fill="none"/>
+                  <circle cx="12" cy="12" r="4" stroke="url(#instagram-gradient)" strokeWidth="2" fill="none"/>
+                  <circle cx="17.5" cy="6.5" r="1.5" fill="url(#instagram-gradient)"/>
+                </svg>
               </a>
               <a 
                 href="https://www.facebook.com/ilumicentercuritiba?locale=pt_BR" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-white/10 p-3 rounded-full hover:bg-primary transition-colors"
+                className="bg-[#1877F2] p-3 rounded-full hover:scale-110 transition-transform"
               >
-                <Facebook className="h-6 w-6" />
+                <svg className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
               </a>
             </div>
           </div>
