@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import MissionVisionValues from "@/components/MissionVisionValues";
 import Services from "@/components/Services";
 import MiniContact from "@/components/MiniContact";
+import Manufacturers from "@/components/Manufacturers";
 import VitrineSection from "@/components/VitrineSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -17,6 +18,7 @@ const Index = () => {
         <MissionVisionValues />
         <Services />
         <MiniContact />
+        <Manufacturers />
         <Contact />
       </main>
       <Footer />
