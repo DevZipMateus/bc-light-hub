@@ -5,17 +5,23 @@ const MissionVisionValues = () => {
     {
       icon: Target,
       title: "Missão",
-      description: "Oferecer soluções completas e personalizadas em iluminação, combinando qualidade, inovação e atendimento excepcional para transformar ambientes e superar as expectativas dos nossos clientes."
+      description: "Oferecer soluções completas e personalizadas em iluminação, combinando qualidade, inovação e atendimento excepcional para transformar ambientes e superar as expectativas dos nossos clientes.",
+      gradient: "from-primary to-primary/80",
+      iconBg: "bg-primary"
     },
     {
       icon: Eye,
       title: "Visão",
-      description: "Ser referência no mercado de iluminação, reconhecida pela excelência em fabricação própria de perfis LED e pela especialização em telas tensionadas iluminadas."
+      description: "Ser referência no mercado de iluminação, reconhecida pela excelência em fabricação própria de perfis LED e pela especialização em telas tensionadas iluminadas.",
+      gradient: "from-accent to-accent/80",
+      iconBg: "bg-accent"
     },
     {
       icon: Heart,
       title: "Valores",
-      description: "Comprometimento com a qualidade, inovação constante, respeito ao cliente, ética nos negócios e paixão por transformar espaços através da luz."
+      description: "Comprometimento com a qualidade, inovação constante, respeito ao cliente, ética nos negócios e paixão por transformar espaços através da luz.",
+      gradient: "from-primary via-primary/90 to-accent",
+      iconBg: "bg-primary"
     }
   ];
 
@@ -31,10 +37,13 @@ const MissionVisionValues = () => {
           {cards.map((card, index) => (
             <div 
               key={index}
-              className="bg-card p-8 rounded-xl border border-border shadow-soft hover:shadow-medium transition-all duration-300 group"
+              className="relative bg-card p-8 rounded-xl border border-border shadow-soft hover:shadow-medium transition-all duration-300 group overflow-hidden"
             >
-              <div className="flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6 group-hover:bg-primary/20 transition-colors duration-300">
-                <card.icon className="w-8 h-8 text-primary" />
+              {/* Top gradient bar */}
+              <div className={`absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r ${card.gradient}`}></div>
+              
+              <div className={`flex items-center justify-center w-16 h-16 ${card.iconBg} rounded-full mb-6 shadow-md group-hover:scale-110 transition-transform duration-300`}>
+                <card.icon className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">{card.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{card.description}</p>
