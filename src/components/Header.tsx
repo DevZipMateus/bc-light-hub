@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, Store } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import logoFinal from "@/assets/logo-final.png";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -29,7 +30,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <img src="/logo.png" alt="Bassani & Calegari Iluminação" className="h-28 w-auto" />
+            <img src={logoFinal} alt="Bassani & Calegari Iluminação" className="h-16 w-auto" />
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
