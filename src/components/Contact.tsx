@@ -51,7 +51,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="bg-card p-6 rounded-lg shadow-soft border border-border hover:shadow-medium transition-all duration-300">
+              <div id="endereco" className="bg-card p-6 rounded-lg shadow-soft border border-border hover:shadow-medium transition-all duration-300">
                 <div className="flex items-start">
                   <div className="p-3 bg-primary/10 rounded-lg mr-4">
                     <MapPin className="w-6 h-6 text-primary" />

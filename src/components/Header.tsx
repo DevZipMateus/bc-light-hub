@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Store } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import logoFinal from "@/assets/logo-final.png";
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -33,26 +33,29 @@ const Header = () => {
             <img src={logoFinal} alt="Bassani & Calegari Iluminação" className="h-16 w-auto" />
           </div>
 
-          <nav className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection("inicio")} className="text-foreground hover:text-primary transition-colors font-medium">
-              Início
-            </button>
-            <button onClick={() => scrollToSection("sobre")} className="text-foreground hover:text-primary transition-colors font-medium">
-              Sobre
-            </button>
+          <nav className="hidden md:flex items-center space-x-6">
+            <Link to="/vitrine" className="text-foreground hover:text-primary transition-colors font-medium flex items-center gap-1">
+              <Store size={18} />
+              Vitrine
+            </Link>
             <button onClick={() => scrollToSection("servicos")} className="text-foreground hover:text-primary transition-colors font-medium">
               Serviços
             </button>
             <button onClick={() => scrollToSection("contato")} className="text-foreground hover:text-primary transition-colors font-medium">
               Contato
             </button>
-            <Link to="/vitrine" className="text-foreground hover:text-primary transition-colors font-medium flex items-center gap-1">
-              <Store size={18} />
-              Vitrine
-            </Link>
-            <Button onClick={() => window.open("https://wa.me/5541999999999", "_blank")} className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              Fale conosco
-            </Button>
+            <button onClick={() => scrollToSection("fabricantes")} className="text-foreground hover:text-primary transition-colors font-medium">
+              Fabricantes
+            </button>
+            <button onClick={() => scrollToSection("missao")} className="text-foreground hover:text-primary transition-colors font-medium">
+              Missão
+            </button>
+            <button onClick={() => scrollToSection("historia")} className="text-foreground hover:text-primary transition-colors font-medium">
+              História
+            </button>
+            <button onClick={() => scrollToSection("endereco")} className="text-foreground hover:text-primary transition-colors font-medium">
+              Endereço
+            </button>
           </nav>
 
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="md:hidden text-foreground" aria-label="Menu">
@@ -60,27 +63,30 @@ const Header = () => {
           </button>
         </div>
 
-        {isMobileMenuOpen && <nav className="md:hidden py-4 border-t border-border">
+        {isMobileMenuOpen && <nav className="md:hidden py-4 border-t border-border bg-background">
             <div className="flex flex-col space-y-4">
-              <button onClick={() => scrollToSection("inicio")} className="text-foreground hover:text-primary transition-colors font-medium text-left">
-                Início
-              </button>
-              <button onClick={() => scrollToSection("sobre")} className="text-foreground hover:text-primary transition-colors font-medium text-left">
-                Sobre
-              </button>
+              <Link to="/vitrine" onClick={() => setIsMobileMenuOpen(false)} className="text-foreground hover:text-primary transition-colors font-medium text-left flex items-center gap-1">
+                <Store size={18} />
+                Vitrine
+              </Link>
               <button onClick={() => scrollToSection("servicos")} className="text-foreground hover:text-primary transition-colors font-medium text-left">
                 Serviços
               </button>
               <button onClick={() => scrollToSection("contato")} className="text-foreground hover:text-primary transition-colors font-medium text-left">
                 Contato
               </button>
-              <Link to="/vitrine" className="text-foreground hover:text-primary transition-colors font-medium text-left flex items-center gap-1">
-                <Store size={18} />
-                Vitrine
-              </Link>
-              <Button onClick={() => window.open("https://wa.me/5541999999999", "_blank")} className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
-                Fale conosco
-              </Button>
+              <button onClick={() => scrollToSection("fabricantes")} className="text-foreground hover:text-primary transition-colors font-medium text-left">
+                Fabricantes
+              </button>
+              <button onClick={() => scrollToSection("missao")} className="text-foreground hover:text-primary transition-colors font-medium text-left">
+                Missão
+              </button>
+              <button onClick={() => scrollToSection("historia")} className="text-foreground hover:text-primary transition-colors font-medium text-left">
+                História
+              </button>
+              <button onClick={() => scrollToSection("endereco")} className="text-foreground hover:text-primary transition-colors font-medium text-left">
+                Endereço
+              </button>
             </div>
           </nav>}
       </div>
