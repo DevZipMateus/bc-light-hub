@@ -123,7 +123,7 @@ const Services = () => {
                 <span className="text-foreground">Cumprimento rigoroso de prazos e padrões de qualidade</span>
               </div>
             </div>
-            <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
+            <div className="mt-8 flex flex-col items-center gap-4 text-center">
               <a href="https://wa.me/5541999287670" target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg"
