@@ -1,5 +1,6 @@
-import { Zap, Frame, Wrench, CheckCircle } from "lucide-react";
+import { Zap, Frame, Wrench, CheckCircle, MessageCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const Services = () => {
   return (
@@ -121,6 +122,18 @@ const Services = () => {
                 <CheckCircle className="w-5 h-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
                 <span className="text-foreground">Cumprimento rigoroso de prazos e padrões de qualidade</span>
               </div>
+            </div>
+            <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
+              <a href="https://wa.me/5541999287670" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  size="lg"
+                  className="bg-[#25D366] hover:bg-[#20bd5a] text-white transition-all duration-300"
+                >
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  Fale pelo WhatsApp
+                </Button>
+              </a>
+              <span className="text-muted-foreground text-lg">(41) 9 9928-7670 - Silvio Calegari</span>
             </div>
           </div>
         </div>
