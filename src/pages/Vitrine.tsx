@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import logoFinal from "@/assets/logo-final.png";
 
 const Vitrine = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,7 +17,7 @@ const Vitrine = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col" style={{ height: 'calc(100vh - 63px)', overflow: 'hidden' }}>
+    <div className="w-full h-screen overflow-hidden">
       {/* Header fixo - 80px */}
       <header 
         className={`fixed top-0 left-0 right-0 z-50 h-20 transition-all duration-300 ${
@@ -25,16 +26,12 @@ const Vitrine = () => {
       >
         <div className="container mx-auto px-4 h-full">
           <div className="flex items-center justify-between h-full">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center">
               <img 
-                src="/logo.png" 
-                alt="B & C - Tudo em iluminação" 
-                className="h-28 w-auto" 
+                src={logoFinal} 
+                alt="Bassani & Calegari Iluminação" 
+                className="h-16 w-auto" 
               />
-              <div className="hidden md:block">
-                <div className="text-lg font-bold text-primary">B & C</div>
-                <div className="text-xs text-muted-foreground">Tudo em iluminação</div>
-              </div>
             </div>
 
             <nav className="hidden md:flex items-center space-x-8">
@@ -46,7 +43,7 @@ const Vitrine = () => {
                 Voltar ao site
               </Link>
               <Button 
-                onClick={() => window.open("https://wa.me/5541999999999", "_blank")} 
+                onClick={() => window.open("https://wa.me/5541984125653", "_blank")} 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
               >
                 Fale conosco
@@ -73,7 +70,7 @@ const Vitrine = () => {
                   Voltar ao site
                 </Link>
                 <Button 
-                  onClick={() => window.open("https://wa.me/5541999999999", "_blank")} 
+                  onClick={() => window.open("https://wa.me/5541984125653", "_blank")} 
                   className="bg-primary hover:bg-primary/90 text-primary-foreground w-full"
                 >
                   Fale conosco
@@ -84,12 +81,12 @@ const Vitrine = () => {
         </div>
       </header>
 
-      {/* Iframe - ocupa o espaço restante (100vh - 80px header - 63px badge) */}
+      {/* Iframe - ocupa o espaço restante (100vh - 80px header) */}
       <main 
-        className="w-full flex-1"
+        className="w-full"
         style={{ 
           marginTop: '80px',
-          height: 'calc(100vh - 80px - 63px)'
+          height: 'calc(100vh - 80px)'
         }}
       >
         <iframe 
