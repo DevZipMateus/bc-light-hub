@@ -65,12 +65,6 @@ const Hero = () => {
             </Button>
           </Link>
 
-          <div className="flex justify-center mt-16">
-            <div className="bg-card/50 backdrop-blur-sm p-6 rounded-lg border border-border shadow-soft hover:shadow-medium transition-all duration-300">
-              <div className="text-3xl font-bold text-accent mb-2">15+</div>
-              <div className="text-sm text-muted-foreground">Anos de experiência</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
