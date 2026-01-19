@@ -107,97 +107,139 @@ const OurHistory = () => {
 
             {/* Timeline */}
             <div className="mt-16">
-              <h3 className="text-2xl font-bold text-primary text-center mb-10">Nossa linha do tempo</h3>
+              <h3 className="text-2xl font-bold text-primary text-center mb-12">Nossa linha do tempo</h3>
               
-              {/* Desktop Timeline */}
-              <div className="hidden md:block relative">
+              {/* Desktop Timeline - Zigzag style */}
+              <div className="hidden md:block relative py-8">
                 {/* Horizontal line */}
-                <div className="absolute top-6 left-0 right-0 h-0.5 bg-foreground"></div>
+                <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-border -translate-y-1/2"></div>
                 
-                <div className="flex justify-between items-start">
-                  {/* 2016 */}
+                {/* Small dots on line */}
+                <div className="absolute top-1/2 left-[10%] w-2 h-2 bg-muted-foreground/30 rounded-full -translate-y-1/2"></div>
+                <div className="absolute top-1/2 left-[30%] w-2 h-2 bg-muted-foreground/30 rounded-full -translate-y-1/2"></div>
+                <div className="absolute top-1/2 left-[50%] w-2 h-2 bg-muted-foreground/30 rounded-full -translate-y-1/2"></div>
+                <div className="absolute top-1/2 left-[70%] w-2 h-2 bg-muted-foreground/30 rounded-full -translate-y-1/2"></div>
+                <div className="absolute top-1/2 left-[90%] w-2 h-2 bg-muted-foreground/30 rounded-full -translate-y-1/2"></div>
+                
+                <div className="flex justify-between items-center relative">
+                  {/* 2016 - Top */}
                   <div className="flex flex-col items-center relative">
-                    <div className="w-0.5 h-8 bg-foreground transform -rotate-12"></div>
-                    <div className="mt-3 text-center">
-                      <p className="font-bold text-foreground">2016</p>
-                      <p className="text-sm text-muted-foreground">Abertura</p>
+                    <div className="text-center mb-4 max-w-[100px]">
+                      <p className="font-semibold text-foreground text-sm">Abertura</p>
+                    </div>
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center shadow-lg border-4 border-background z-10">
+                      <span className="text-white font-bold text-sm">2016</span>
+                    </div>
+                    <div className="h-12"></div>
+                  </div>
+
+                  {/* 2017 - Bottom */}
+                  <div className="flex flex-col items-center relative">
+                    <div className="h-12"></div>
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-accent to-accent/80 flex items-center justify-center shadow-lg border-4 border-background z-10">
+                      <span className="text-white font-bold text-sm">2017</span>
+                    </div>
+                    <div className="text-center mt-4 max-w-[120px]">
+                      <p className="font-semibold text-foreground text-sm">Sociedade</p>
+                      <p className="text-xs text-muted-foreground">Silvio e Simone</p>
                     </div>
                   </div>
 
-                  {/* 2017 */}
+                  {/* 2020 - Top */}
                   <div className="flex flex-col items-center relative">
-                    <div className="w-0.5 h-8 bg-foreground transform -rotate-12"></div>
-                    <div className="mt-3 text-center max-w-[120px]">
-                      <p className="font-bold text-foreground">2017</p>
-                      <p className="text-sm text-muted-foreground">Sociedade Silvio e Simone</p>
-                      <p className="text-sm text-muted-foreground">Ajuste CNPJ</p>
+                    <div className="text-center mb-4 max-w-[100px]">
+                      <p className="font-semibold text-foreground text-sm">Novo endereço</p>
+                    </div>
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-lg border-4 border-background z-10">
+                      <span className="text-white font-bold text-sm">2020</span>
+                    </div>
+                    <div className="h-12"></div>
+                  </div>
+
+                  {/* 2024 - Bottom */}
+                  <div className="flex flex-col items-center relative">
+                    <div className="h-12"></div>
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-violet-500 to-violet-600 flex items-center justify-center shadow-lg border-4 border-background z-10">
+                      <span className="text-white font-bold text-sm">2024</span>
+                    </div>
+                    <div className="text-center mt-4 max-w-[120px]">
+                      <p className="font-semibold text-foreground text-sm">Realinhamento</p>
+                      <p className="text-xs text-muted-foreground">de marca</p>
                     </div>
                   </div>
 
-                  {/* 2020 */}
+                  {/* 2026 - Top */}
                   <div className="flex flex-col items-center relative">
-                    <div className="w-0.5 h-8 bg-foreground transform -rotate-12"></div>
-                    <div className="mt-3 text-center">
-                      <p className="font-bold text-foreground">2020</p>
-                      <p className="text-sm text-muted-foreground">Novo endereço</p>
+                    <div className="text-center mb-4 max-w-[100px]">
+                      <p className="font-semibold text-foreground text-sm">Ampliação</p>
                     </div>
-                  </div>
-
-                  {/* 2024 */}
-                  <div className="flex flex-col items-center relative">
-                    <div className="w-0.5 h-8 bg-foreground transform -rotate-12"></div>
-                    <div className="mt-3 text-center max-w-[120px]">
-                      <p className="font-bold text-foreground">2024</p>
-                      <p className="text-sm text-muted-foreground">Realinhamento de marca</p>
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-rose-500 to-rose-600 flex items-center justify-center shadow-lg border-4 border-background z-10">
+                      <span className="text-white font-bold text-sm">2026</span>
                     </div>
-                  </div>
-
-                  {/* 2026 */}
-                  <div className="flex flex-col items-center relative">
-                    <div className="w-0.5 h-8 bg-foreground transform -rotate-12"></div>
-                    <div className="mt-3 text-center">
-                      <p className="font-bold text-foreground">2026</p>
-                      <p className="text-sm text-muted-foreground">Ampliação</p>
-                    </div>
+                    <div className="h-12"></div>
                   </div>
                 </div>
               </div>
 
               {/* Mobile Timeline */}
-              <div className="md:hidden relative pl-8">
+              <div className="md:hidden relative pl-12">
                 {/* Vertical line */}
-                <div className="absolute left-3 top-0 bottom-0 w-0.5 bg-foreground"></div>
+                <div className="absolute left-5 top-0 bottom-0 w-0.5 bg-border"></div>
                 
                 <div className="space-y-8">
                   {/* 2016 */}
                   <div className="relative">
-                    <div className="absolute -left-5 top-1 w-4 h-0.5 bg-foreground"></div>
-                    <p className="font-bold text-foreground">2016 - Abertura</p>
+                    <div className="absolute -left-7 top-0 w-10 h-10 rounded-full bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center shadow-lg border-2 border-background">
+                      <span className="text-white font-bold text-xs">2016</span>
+                    </div>
+                    <div className="pt-1">
+                      <p className="font-semibold text-foreground">Abertura</p>
+                      <p className="text-sm text-muted-foreground">Início da jornada</p>
+                    </div>
                   </div>
 
                   {/* 2017 */}
                   <div className="relative">
-                    <div className="absolute -left-5 top-1 w-4 h-0.5 bg-foreground"></div>
-                    <p className="font-bold text-foreground">2017</p>
-                    <p className="text-sm text-muted-foreground">Sociedade Silvio e Simone / Ajuste CNPJ</p>
+                    <div className="absolute -left-7 top-0 w-10 h-10 rounded-full bg-gradient-to-br from-accent to-accent/80 flex items-center justify-center shadow-lg border-2 border-background">
+                      <span className="text-white font-bold text-xs">2017</span>
+                    </div>
+                    <div className="pt-1">
+                      <p className="font-semibold text-foreground">Sociedade</p>
+                      <p className="text-sm text-muted-foreground">Silvio e Simone / Ajuste CNPJ</p>
+                    </div>
                   </div>
 
                   {/* 2020 */}
                   <div className="relative">
-                    <div className="absolute -left-5 top-1 w-4 h-0.5 bg-foreground"></div>
-                    <p className="font-bold text-foreground">2020 - Novo endereço</p>
+                    <div className="absolute -left-7 top-0 w-10 h-10 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-lg border-2 border-background">
+                      <span className="text-white font-bold text-xs">2020</span>
+                    </div>
+                    <div className="pt-1">
+                      <p className="font-semibold text-foreground">Novo endereço</p>
+                      <p className="text-sm text-muted-foreground">Expansão do espaço</p>
+                    </div>
                   </div>
 
                   {/* 2024 */}
                   <div className="relative">
-                    <div className="absolute -left-5 top-1 w-4 h-0.5 bg-foreground"></div>
-                    <p className="font-bold text-foreground">2024 - Realinhamento de marca</p>
+                    <div className="absolute -left-7 top-0 w-10 h-10 rounded-full bg-gradient-to-br from-violet-500 to-violet-600 flex items-center justify-center shadow-lg border-2 border-background">
+                      <span className="text-white font-bold text-xs">2024</span>
+                    </div>
+                    <div className="pt-1">
+                      <p className="font-semibold text-foreground">Realinhamento de marca</p>
+                      <p className="text-sm text-muted-foreground">Bassani & Calegari Iluminação</p>
+                    </div>
                   </div>
 
                   {/* 2026 */}
                   <div className="relative">
-                    <div className="absolute -left-5 top-1 w-4 h-0.5 bg-foreground"></div>
-                    <p className="font-bold text-foreground">2026 - Ampliação</p>
+                    <div className="absolute -left-7 top-0 w-10 h-10 rounded-full bg-gradient-to-br from-rose-500 to-rose-600 flex items-center justify-center shadow-lg border-2 border-background">
+                      <span className="text-white font-bold text-xs">2026</span>
+                    </div>
+                    <div className="pt-1">
+                      <p className="font-semibold text-foreground">Ampliação</p>
+                      <p className="text-sm text-muted-foreground">Novos horizontes</p>
+                    </div>
                   </div>
                 </div>
               </div>
