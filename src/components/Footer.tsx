@@ -35,36 +35,43 @@ const Footer = () => {
           {/* Redes sociais */}
           <div className="space-y-4">
             <h3 className="text-xl font-semibold mb-4">Redes sociais</h3>
-            <div className="flex gap-4">
+            <div className="flex gap-4 items-center">
               <a 
                 href="https://www.instagram.com/bassanicalegariiluminacao/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-white p-3 rounded-full hover:scale-110 transition-transform"
+                className="hover:scale-110 transition-transform"
               >
-                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none">
+                <svg className="h-12 w-12" viewBox="0 0 48 48" fill="none">
                   <defs>
-                    <linearGradient id="instagram-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="#FFDC80" />
-                      <stop offset="25%" stopColor="#F77737" />
-                      <stop offset="50%" stopColor="#E1306C" />
-                      <stop offset="75%" stopColor="#C13584" />
-                      <stop offset="100%" stopColor="#833AB4" />
-                    </linearGradient>
+                    <radialGradient id="instagram-radial" cx="30%" cy="107%" r="150%">
+                      <stop offset="0%" stopColor="#FFDD55" />
+                      <stop offset="10%" stopColor="#FFDD55" />
+                      <stop offset="50%" stopColor="#FF543E" />
+                      <stop offset="100%" stopColor="#C837AB" />
+                    </radialGradient>
+                    <radialGradient id="instagram-radial-2" cx="107.5%" cy="0%" r="150%">
+                      <stop offset="0%" stopColor="#406ADC" />
+                      <stop offset="50%" stopColor="#6A45BE" />
+                      <stop offset="100%" stopColor="#6A45BE" stopOpacity="0" />
+                    </radialGradient>
                   </defs>
-                  <rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#instagram-gradient)" strokeWidth="2" fill="none"/>
-                  <circle cx="12" cy="12" r="4" stroke="url(#instagram-gradient)" strokeWidth="2" fill="none"/>
-                  <circle cx="17.5" cy="6.5" r="1.5" fill="url(#instagram-gradient)"/>
+                  <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#instagram-radial)"/>
+                  <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#instagram-radial-2)"/>
+                  <circle cx="24" cy="24" r="9" stroke="white" strokeWidth="3" fill="none"/>
+                  <circle cx="36" cy="12" r="2.5" fill="white"/>
+                  <rect x="6" y="6" width="36" height="36" rx="9" stroke="white" strokeWidth="3" fill="none"/>
                 </svg>
               </a>
               <a 
                 href="https://www.facebook.com/ilumicentercuritiba?locale=pt_BR" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-[#1877F2] p-3 rounded-full hover:scale-110 transition-transform"
+                className="hover:scale-110 transition-transform"
               >
-                <svg className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                <svg className="h-12 w-12" viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="24" r="22" fill="#1877F2"/>
+                  <path d="M32.5 25.5H27.5V42H21V25.5H17V20H21V16.5C21 12.5 23.5 9 28.5 9C30.5 9 32 9.5 32 9.5V14.5H29.5C27.5 14.5 27 15.5 27 17V20H32L32.5 25.5Z" fill="white"/>
                 </svg>
               </a>
             </div>
