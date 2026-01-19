@@ -10,10 +10,16 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
+          <p className="text-lg md:text-xl text-foreground mb-4 leading-relaxed">
+            Tudo de iluminação
+          </p>
+          
+          <p className="text-lg md:text-xl text-foreground mb-4 leading-relaxed">
+            Luz sob medida que transforma espaços
+          </p>
+          
           <p className="text-lg md:text-xl text-foreground mb-8 leading-relaxed">
-            Bem-vindo à <strong className="text-primary">Bassani & Calegari Iluminação</strong>. 
-            Explore nossa vitrine com soluções completas em iluminação, fabricação própria de perfis LED 
-            e instalação especializada em telas tensionadas iluminadas.
+            Soluções completas e personalizadas, com fabricação própria de perfis LED e instalação especializada em telas tensionadas iluminadas.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
