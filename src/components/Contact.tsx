@@ -25,10 +25,10 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold mb-2 text-foreground">E-mail</h3>
                     <a 
-                      href="mailto:simone@ilumicenter.com.br"
+                      href="mailto:silvio@bassanicalegariiluminacao.com.br"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      simone@ilumicenter.com.br
+                      silvio@bassanicalegariiluminacao.com.br
                     </a>
                   </div>
                 </div>
@@ -42,10 +42,10 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold mb-2 text-foreground">Telefone</h3>
                     <a 
-                      href="https://wa.me/5541999999999"
+                      href="https://wa.me/5541984125653"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      (41) 99999-9999
+                      (41) 98412-5653
                     </a>
                   </div>
                 </div>
@@ -60,7 +60,7 @@ const Contact = () => {
                     <h3 className="text-lg font-semibold mb-2 text-foreground">Endereço</h3>
                     <p className="text-muted-foreground">
                       Rua Capiberibe, 153 loja 02<br />
-                      Curitiba - PR
+                      Bairro Santa Quitéria - Curitiba - PR
                     </p>
                   </div>
                 </div>
@@ -89,7 +89,7 @@ const Contact = () => {
                   Entre em contato conosco e receba uma proposta personalizada para seu projeto de iluminação.
                 </p>
                 <Button 
-                  onClick={() => window.open("https://wa.me/5541999999999", "_blank")}
+                  onClick={() => window.open("https://wa.me/5541984125653", "_blank")}
                   className="w-full bg-white text-primary hover:bg-white/90 transition-all duration-300"
                   size="lg"
                 >
