@@ -5,21 +5,21 @@ const MissionVisionValues = () => {
     {
       icon: Target,
       title: "Missão",
-      description: "Oferecer soluções completas e personalizadas em iluminação, combinando qualidade, inovação e atendimento excepcional para transformar ambientes e superar as expectativas dos nossos clientes.",
+      description: "Oferecer soluções completas em iluminação, unindo fornecimento multimarcas e fabricação própria de perfis de LED sob medida, com qualidade, comprometimento e atendimento especializado. Atender de forma personalizada cada projeto — da concepção à entrega final — garantindo eficiência, estética e satisfação aos nossos clientes.",
       gradient: "from-primary to-primary/80",
       iconBg: "bg-primary"
     },
     {
       icon: Eye,
       title: "Visão",
-      description: "Ser referência no mercado de iluminação, reconhecida pela excelência em fabricação própria de perfis LED e pela especialização em telas tensionadas iluminadas.",
+      description: "Ser reconhecida como referência em iluminação em Curitiba e região metropolitana, destacando-se pela excelência técnica, inovação constante e crescimento sustentável, consolidando a Bassani & Calegari Iluminação como marca forte e confiável no mercado.",
       gradient: "from-accent to-accent/80",
       iconBg: "bg-accent"
     },
     {
       icon: Heart,
       title: "Valores",
-      description: "Comprometimento com a qualidade, inovação constante, respeito ao cliente, ética nos negócios e paixão por transformar espaços através da luz.",
+      description: "Integridade e transparência em todas as relações comerciais. Comprometimento com qualidade, prazos e resultados. Responsabilidade no cumprimento de acordos e obrigações. Respeito nas relações com clientes, fornecedores e parceiros. Evolução constante, acompanhando tendências e avanços tecnológicos do setor de iluminação.",
       gradient: "from-primary via-primary/90 to-accent",
       iconBg: "bg-primary"
     }
