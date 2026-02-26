@@ -11,9 +11,6 @@ const Services = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
               Nossos serviços
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Soluções completas em iluminação, da fabricação à instalação
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">

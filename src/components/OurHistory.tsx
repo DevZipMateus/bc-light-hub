@@ -13,7 +13,7 @@ const OurHistory = () => {
             {/* Intro */}
             <div className="space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                A história da ILUMICENTER começou em 2016, em Curitiba, no Bairro do Portão - referência em Tudo em Iluminação, localizada na Rua João Bettega. Começamos do zero: abertura de CNPJ, busca pelo endereço ideal, identificação de oportunidades, escolha do nome, definição da paleta de cores e formação das primeiras parcerias. Enfrentamos dificuldades comuns de quem está iniciando como a liberação de crédito e até a abertura de conta bancária - mas superamos cada obstáculo com persistência e fé.
+                A história da Bassani & Calegari Iluminação começou em 2016, em Curitiba, no Bairro do Portão - referência em Tudo em Iluminação, localizada na Rua João Bettega. Começamos do zero: abertura de CNPJ, busca pelo endereço ideal, identificação de oportunidades, escolha do nome, definição da paleta de cores e formação das primeiras parcerias. Enfrentamos dificuldades comuns de quem está iniciando como a liberação de crédito e até a abertura de conta bancária - mas superamos cada obstáculo com persistência e fé.
               </p>
               <p className="text-muted-foreground leading-relaxed font-medium">
                 Passo a passo, alcançamos nossas conquistas.
@@ -38,7 +38,7 @@ const OurHistory = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-primary">Nosso propósito</h3>
               <p className="text-muted-foreground leading-relaxed">
-                A ILUMICENTER - Tudo em Iluminação nasceu de um sonho - daqueles que muitos têm e lutam para transformar em realidade. Depois de muitos desenhos, estudos e projetos no papel, conseguimos colocar em prática nossa história e fazer esse sonho acontecer.
+                A Bassani & Calegari Iluminação - Tudo em Iluminação nasceu de um sonho - daqueles que muitos têm e lutam para transformar em realidade. Depois de muitos desenhos, estudos e projetos no papel, conseguimos colocar em prática nossa história e fazer esse sonho acontecer.
               </p>
               <p className="text-muted-foreground leading-relaxed font-medium">
                 Carregamos diariamente um sentimento de gratidão.
@@ -61,7 +61,7 @@ const OurHistory = () => {
                 Oferecemos soluções de diversos fabricantes nacionais e importados, desde os mais renomados como Stella, Accord, PowerLume, entre tantos outros, desde que atendam nossos critérios de qualidade.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Além da revenda, a Ilumicenter Tudo em Iluminação também é uma empresa fabril, produzindo perfis de LED sob medida para diferentes aplicações.
+                Além da revenda, a Bassani & Calegari Iluminação também é uma empresa fabril, produzindo perfis de LED sob medida para diferentes aplicações.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Essa linha inclui arandelas, pendentes e modelos customizados, que oferecem versatilidade e sofisticação na composição dos projetos luminotécnicos.
@@ -72,7 +72,7 @@ const OurHistory = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-primary">Nosso futuro</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Com orgulho e reconhecimento no mercado, demos um passo importante em nossa trajetória: em 2024, a ILUMICENTER passou a atuar sob o nome de sua razão social - Bassani & Calegari Iluminação.
+                Com orgulho e reconhecimento no mercado, demos um passo importante em nossa trajetória: em 2024, consolidamos a marca sob o nome Bassani & Calegari Iluminação.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Nosso objetivo é consolidar a marca como referência em soluções luminotécnicas originais e de qualidade.
